@@ -73,8 +73,17 @@ Inception 完了: 2026-10-16T18:16:55+0900（開始から約1時間33分）。
 
 ## テスト結果
 
-（Build and Test 実行後に記入）
+- 実行: `npm run verify` 成功（815 件合格、行カバレッジ 全体 96.31%、各 Unit 80% 以上）。`npm run build`、配布の検査（許可リスト 5 件）、検査スクリプトの単体テスト（10 件）、クリーンな `npm ci` からの再現も成功。
+- 実ブラウザ（Chrome）: 性能（月次集計の切り替え 中央値 21.1ms、CSV 5,000 行のプレビュー 中央値 156.8ms。目安 500ms と 2 秒を大きく下回る）、B1〜B5、キーボードだけの登録と削除、外部への通信 0 件（127.0.0.1 のみ）、再読み込み後の保持、CSV の書き出し。
+- 他ブラウザ（Edge、Firefox、Safari）: 利用者の手動確認で合格と報告。手順ごとの記録は受け取っていない。
+- 記録: `aidlc/spaces/default/intents/261016-budget-webapp/construction/build-and-test/test-results.md`
+- 未解決の注意: 承認時の検証記録で、`performance-test-instructions.md` と `security-test-instructions.md` は「出力に含まれない（presentCount 0）」と記録されている。Build and Test の生成物として宣言されているが、ファイルは作っていない。承認は記録済みのため、必要なら追補する。
+- 既知の揺れ: 既存の lint-config テスト（U1・U3）が全体の並列実行で時々失敗する。単独で再実行すると合格（今回の Build and Test の全体実行では再発していない）。
+- 保留の注意: 1 回目のチェックポイント検証が終了コード 1 で失敗した（原因不明、直後の再実行は合格）。
 
 ## やり直し回数の合計
 
-（ワークフロー終了時に記入。各ゲートの Request Changes 回数は aidlc-state.md の Revision Count と監査ログで確認できる）
+- Request Changes の回答: 0 件（監査ログで確認。ゲートの選択肢 `Approve, Request Changes` の表示は 8 件、回答はすべて Approve）。
+- 上記の数は、ゲートの差し戻しだけを数える。レビューの指摘を受けた文書の修正（規則の誤り、登録フォームの無効化など）は、やり直しに含めていない。
+- 手順の誤り（完了の記録の順序、レビューの記録の拒否）は、本ファイル「ステージ記録」の備考に記録済み。やり直し回数には数えていない。
+- ワークフロー: Build and Test の承認（2026-10-16T21:23:12Z、監査記録）で、Classic スコープの全ステージが完了。
