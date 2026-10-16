@@ -1,0 +1,31 @@
+{
+  "stage": "functional-design",
+  "unit": "data-contract",
+  "upstream_ids": [
+    "AC1.1.1", "AC1.1.2", "AC1.1.3", "AC1.1.4", "AC1.1.5",
+    "AC6.2.1", "AC6.2.2", "AC6.2.3"
+  ],
+  "coverage": [
+    { "id": "AC1.1.1", "status": "OK", "target": "BR1.1" },
+    { "id": "AC1.1.2", "status": "OK", "target": "BR1.3" },
+    { "id": "AC1.1.3", "status": "OK", "target": "BR2.1, BR2.2" },
+    { "id": "AC1.1.4", "status": "OK", "target": "BR1.4" },
+    { "id": "AC1.1.5", "status": "OK", "target": "BR3.1" },
+    { "id": "AC6.2.1", "status": "OK", "target": "BR4.5" },
+    { "id": "AC6.2.2", "status": "OK", "target": "BR4.6" },
+    { "id": "AC6.2.3", "status": "OK", "target": "BR4.5, BR4.6" }
+  ],
+  "reverse": [
+    { "id": "BR1.2", "status": "N/A", "target": "対象月の検証。U4・U5・U6 の予算・集計・書き出しの受け入れ条件（AC4.1.x、AC5.1.x、AC6.1.2）で使われる共通規則" },
+    { "id": "BR1.5", "status": "N/A", "target": "種別の検証。U6 の CSV 読み込み（AC7.1.2）と U7 の登録（AC2.1.3）で使われる共通規則" },
+    { "id": "BR1.6", "status": "N/A", "target": "必須項目の判定。U7 の入力エラー表示（AC2.2.1）で使われる共通規則" },
+    { "id": "BR1.7", "status": "N/A", "target": "エラーの順序。U7 のフォーカス移動（AC9.3.2）を支える共通規則" },
+    { "id": "BR4.1", "status": "N/A", "target": "CSV 見出しの判定。U6 の AC7.3.1 で使われる共通規則" },
+    { "id": "BR4.2", "status": "N/A", "target": "CSV 書き出しの形式。U6 の AC6.1.1・AC6.1.3・AC6.1.4 で使われる共通規則" },
+    { "id": "BR4.3", "status": "N/A", "target": "CSV 読み込みの形式と行番号。U6 の AC7.1.1・AC7.1.3 で使われる共通規則" },
+    { "id": "BR4.4", "status": "N/A", "target": "空ファイルの判定。U6 の AC7.3.2 で使われる共通規則" },
+    { "id": "BR4.7", "status": "N/A", "target": "CSV 列の検証。U6 の AC7.1.1・AC7.1.2 で使われる共通規則" },
+    { "id": "BR5.1", "status": "N/A", "target": "保存スキーマの版。U3 の AC1.2.3 で使われる定数" },
+    { "id": "BR6.1", "status": "N/A", "target": "エラー文言の方針。U6・U7 の表示で使われる共通規則" }
+  ]
+}

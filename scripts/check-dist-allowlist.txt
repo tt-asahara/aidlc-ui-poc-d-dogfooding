@@ -1,0 +1,10 @@
+# 配布の検査の許可リスト（infrastructure-specification 4章）。
+# 1 行に1件。注釈は「  # 」の後に書く。
+# 記録するのは、最初のビルド（Build and Test）で見つかった名前空間の識別子とエラー案内の URL だけ。
+# 通信の参照は許可しない。許可リストに無いものは違反として失敗する。
+# 最初のビルドの結果は Build and Test の記録に残す。
+http://www.w3.org/2000/svg  # React の SVG 要素の名前空間の識別子（描画のみ、通信しない）
+http://www.w3.org/1998/Math/MathML  # React の MathML 名前空間の識別子（描画のみ）
+http://www.w3.org/1999/xlink  # React が SVG で使う xlink 名前空間の識別子（描画のみ）
+http://www.w3.org/XML/1998/namespace  # XML の予約名前空間の識別子（描画のみ）
+https://react.dev/errors/  # React のエラー案内 URL。文字列を組み立てるだけで、読み込まない

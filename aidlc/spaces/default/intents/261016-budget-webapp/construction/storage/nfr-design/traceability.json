@@ -1,0 +1,19 @@
+{
+  "stage": "nfr-design",
+  "unit": "storage",
+  "upstream_ids": ["NFR1.1", "NFR3.1", "NFR4.1", "NFR4.2", "NFR4.3", "NFR4.4", "NFR6.1", "NFR6.2", "NFR7.1", "NFR8.1", "NFR8.2", "NFR9.1"],
+  "coverage": [
+    { "id": "NFR1.1", "status": "OK", "target": "security-design.md 第3章: src/storage 向けの通信・他の保存先の禁止規則" },
+    { "id": "NFR3.1", "status": "OK", "target": "security-design.md 第4.3節: 書き込み・1か月分の読み出しの目安（均等と偏り）" },
+    { "id": "NFR4.1", "status": "OK", "target": "security-design.md 第1章: まとめて保存と取り消し" },
+    { "id": "NFR4.2", "status": "OK", "target": "security-design.md 第1.4節と第1.5節: 自動確定を検出できる範囲と差し替えでの扱い" },
+    { "id": "NFR4.3", "status": "OK", "target": "security-design.md 第2章: 版の確認と切断、遅れて成功した接続の扱い" },
+    { "id": "NFR4.4", "status": "OK", "target": "security-design.md 第1.2節 7 と第4.2節: 容量超過を区別した write-failed" },
+    { "id": "NFR6.1", "status": "OK", "target": "security-design.md 第4.1節と第4.2節: storage 用プロジェクト、行 80% 下限、必須のテスト観点" },
+    { "id": "NFR6.2", "status": "OK", "target": "security-design.md 第4.1節: 実装の後にテストを書く順序" },
+    { "id": "NFR7.1", "status": "OK", "target": "security-design.md 第2.1節: IndexedDB の差し込みと利用不可の判定表" },
+    { "id": "NFR8.1", "status": "OK", "target": "security-design.md 第3章: 値を評価しない、eval と new Function の禁止" },
+    { "id": "NFR8.2", "status": "OK", "target": "security-design.md 第3章: 架空のテストデータ" },
+    { "id": "NFR9.1", "status": "OK", "target": "security-design.md 第4.1節: fake-indexeddb の正確なバージョンとロックファイル" }
+  ]
+}

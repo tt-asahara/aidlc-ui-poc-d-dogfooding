@@ -1,0 +1,32 @@
+{
+  "stage": "functional-design",
+  "unit": "ui-kit",
+  "upstream_ids": ["AC9.2.1", "AC9.2.2", "AC9.2.3"],
+  "coverage": [
+    { "id": "AC9.2.1", "status": "OK", "target": "BR5.1, BR5.2, BR5.3" },
+    { "id": "AC9.2.2", "status": "OK", "target": "BR5.4, BR5.5" },
+    { "id": "AC9.2.3", "status": "OK", "target": "BR5.4, BR5.5" }
+  ],
+  "reverse": [
+    { "id": "BR1.1", "status": "N/A", "target": "外部資源なし。U7 が担当する AC1.3.1・AC1.3.2（外部要求0件）を部品側で支える規則" },
+    { "id": "BR1.2", "status": "N/A", "target": "動きの抑制。NFR2 の部品側の規則" },
+    { "id": "BR2.1", "status": "N/A", "target": "処理中のボタン。U7 の AC2.1.4（二重登録防止）を支える" },
+    { "id": "BR2.2", "status": "N/A", "target": "ボタンのキーボード操作とフォーカスリング。U7 の AC9.1.1・AC9.1.2 を支える" },
+    { "id": "BR2.3", "status": "N/A", "target": "操作対象の最小寸法。design-system-mapping の規定" },
+    { "id": "BR2.4", "status": "N/A", "target": "DOM 参照の公開。U7 の AC9.2.2・AC9.3.1 のフォーカス移動を支える" },
+    { "id": "BR3.1", "status": "N/A", "target": "ラベルと必須表示。U7 の AC2.2.x を支える" },
+    { "id": "BR3.2", "status": "N/A", "target": "エラーの関連づけ。U7 の AC2.2.3・AC9.3.1 を支える" },
+    { "id": "BR3.3", "status": "N/A", "target": "ラジオの群。U7 の AC9.1.1 を支える" },
+    { "id": "BR4.1", "status": "N/A", "target": "表の見出しと右寄せ。U7 の一覧・集計表示を支える" },
+    { "id": "BR4.2", "status": "N/A", "target": "狭い幅のカード表示。refined-mockups Q5 の規定" },
+    { "id": "BR5.6", "status": "N/A", "target": "背景クリックで閉じない。mockups D1 の規定" },
+    { "id": "BR6.1", "status": "N/A", "target": "状態表示の文言と役割。U7 の AC8.1.1・AC8.1.2・AC8.2.1・AC8.4.1・AC1.2.3 を支える" },
+    { "id": "BR6.2", "status": "N/A", "target": "読み込みが遅いときの追記。FR8.5 の部品側の規則" },
+    { "id": "BR6.3", "status": "N/A", "target": "成功の知らせ。refined-mockups Q6 の規定" },
+    { "id": "BR6.4", "status": "N/A", "target": "失敗の知らせ。U7 の AC8.3.1 を支える" },
+    { "id": "BR7.1", "status": "N/A", "target": "ファイル選択。U7・U6 の AC7.1.x・AC9.1.1 を支える" },
+    { "id": "BR8.1", "status": "N/A", "target": "タブの役割。U7 の AC9.1.1 を支える" },
+    { "id": "BR8.2", "status": "N/A", "target": "タブの矢印操作。accessibility-checklist K4 を支える" },
+    { "id": "BR8.3", "status": "N/A", "target": "選択の示し方。AC9.1.4 を支える" }
+  ]
+}

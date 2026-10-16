@@ -1,0 +1,21 @@
+{
+  "stage": "nfr-design",
+  "unit": "csv-exchange",
+  "upstream_ids": ["NFR1.1", "NFR3.1", "NFR3.2", "NFR4.1", "NFR4.2", "NFR4.3", "NFR6.1", "NFR6.2", "NFR6.3", "NFR8.1", "NFR8.2", "NFR8.3", "NFR8.4", "NFR9.1"],
+  "coverage": [
+    { "id": "NFR1.1", "status": "OK", "target": "security-design.md 第5章: csv-exchange 向けの禁止規則と U3 の import の禁止" },
+    { "id": "NFR3.1", "status": "OK", "target": "security-design.md 第6.3節: parseImportFile の中央値と too-many-rows の最悪の時間" },
+    { "id": "NFR3.2", "status": "OK", "target": "security-design.md 第6.3節: exportTransactions の中央値" },
+    { "id": "NFR4.1", "status": "OK", "target": "security-design.md 第3章: U4 の1回の書き込み処理とプレビュー後の変化" },
+    { "id": "NFR4.2", "status": "OK", "target": "security-design.md 第2章: 大きさは読む前、件数は復号の後に断る" },
+    { "id": "NFR4.3", "status": "OK", "target": "security-design.md 第2章と第4章: ファイル全体の理由の型と例外の変換" },
+    { "id": "NFR6.1", "status": "OK", "target": "security-design.md 第6.1節: csv-exchange 用プロジェクトと行 80% 下限" },
+    { "id": "NFR6.2", "status": "OK", "target": "security-design.md 第6.1節: テストを先に書く順序" },
+    { "id": "NFR6.3", "status": "OK", "target": "security-design.md 第6.2節: 必須のテスト観点" },
+    { "id": "NFR8.1", "status": "OK", "target": "security-design.md 第1章と第5章: U1 の検証を通った値だけ、eval と new Function の禁止" },
+    { "id": "NFR8.2", "status": "OK", "target": "security-design.md 第5章: raw はファイル上の値のまま、HTML を組み立てない" },
+    { "id": "NFR8.3", "status": "OK", "target": "security-design.md 第1章と第2章: U6 の固定の文言" },
+    { "id": "NFR8.4", "status": "OK", "target": "security-design.md 第5章: 架空のテストデータ" },
+    { "id": "NFR9.1", "status": "OK", "target": "security-design.md 第6.1節: 追加の依存なし" }
+  ]
+}

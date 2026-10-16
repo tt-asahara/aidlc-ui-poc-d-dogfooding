@@ -23,3 +23,8 @@ aidlc/spaces/*/intents/*/.aidlc-*
 aidlc/diagnostics/
 .claude/settings.local.json
 # END AI-DLC:gitignore
+
+# アプリケーションの依存とビルド・テストの生成物
+node_modules/
+coverage/
+dist/

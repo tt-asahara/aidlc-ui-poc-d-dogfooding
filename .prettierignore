@@ -1,0 +1,7 @@
+aidlc/
+.claude/
+poc-evidence/
+node_modules/
+coverage/
+dist/
+package-lock.json

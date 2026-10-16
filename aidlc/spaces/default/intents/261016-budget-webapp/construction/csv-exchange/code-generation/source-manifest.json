@@ -1,0 +1,11 @@
+{
+  "stage": "code-generation",
+  "unit": "csv-exchange",
+  "version": 1,
+  "writes": [
+    { "path": "src/csv-exchange/" },
+    { "path": "vitest.config.ts" },
+    { "path": "eslint.config.js" },
+    { "path": "README.md" }
+  ]
+}

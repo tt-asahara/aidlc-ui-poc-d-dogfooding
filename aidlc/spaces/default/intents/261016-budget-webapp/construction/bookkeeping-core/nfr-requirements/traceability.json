@@ -1,0 +1,16 @@
+{
+  "stage": "nfr-requirements",
+  "unit": "bookkeeping-core",
+  "upstream_ids": ["NFR1", "NFR2", "NFR3", "NFR4", "NFR5", "NFR6", "NFR7", "NFR8", "NFR9"],
+  "coverage": [
+    { "id": "NFR1", "status": "OK", "target": "NFR1.1" },
+    { "id": "NFR2", "status": "N/A", "target": "U4 は画面を持たない" },
+    { "id": "NFR3", "status": "OK", "target": "NFR3.1" },
+    { "id": "NFR4", "status": "OK", "target": "NFR4.1, NFR4.2, NFR4.3, NFR4.4" },
+    { "id": "NFR5", "status": "OK", "target": "NFR5.1" },
+    { "id": "NFR6", "status": "OK", "target": "NFR6.1, NFR6.2, NFR6.3" },
+    { "id": "NFR7", "status": "N/A", "target": "ブラウザの差は U3（保存）と U7（画面）で扱う。U4 は環境に依存しない" },
+    { "id": "NFR8", "status": "OK", "target": "NFR8.1, NFR8.2, NFR8.3" },
+    { "id": "NFR9", "status": "OK", "target": "NFR9.1" }
+  ]
+}

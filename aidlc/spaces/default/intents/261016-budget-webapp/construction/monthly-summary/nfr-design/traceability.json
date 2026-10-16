@@ -1,0 +1,19 @@
+{
+  "stage": "nfr-design",
+  "unit": "monthly-summary",
+  "upstream_ids": ["NFR1.1", "NFR3.1", "NFR3.2", "NFR5.1", "NFR5.2", "NFR6.1", "NFR6.2", "NFR6.3", "NFR8.1", "NFR8.2", "NFR8.3", "NFR9.1"],
+  "coverage": [
+    { "id": "NFR1.1", "status": "OK", "target": "security-design.md 第3章: monthly-summary 向けの禁止規則と計算の部品の追加の禁止" },
+    { "id": "NFR3.1", "status": "OK", "target": "security-design.md 第5.3節: getMonthlySummary の中央値（暫定の割り当て、合計は U7）" },
+    { "id": "NFR3.2", "status": "OK", "target": "security-design.md 第5.3節: computeMonthlySummary の中央値" },
+    { "id": "NFR5.1", "status": "OK", "target": "security-design.md 第1章: 合計は行の和、整数だけの計算" },
+    { "id": "NFR5.2", "status": "OK", "target": "security-design.md 第1章: 最大の合計が安全な整数であることのテスト" },
+    { "id": "NFR6.1", "status": "OK", "target": "security-design.md 第5.1節: monthly-summary 用プロジェクトと行 80% 下限" },
+    { "id": "NFR6.2", "status": "OK", "target": "security-design.md 第5.1節: 実装の後にテストを書く順序" },
+    { "id": "NFR6.3", "status": "OK", "target": "security-design.md 第5.2節: 必須のテスト観点" },
+    { "id": "NFR8.1", "status": "OK", "target": "security-design.md 第2章: 読み取りの順と食い違いの扱い" },
+    { "id": "NFR8.2", "status": "OK", "target": "security-design.md 第2章: 失敗はそのまま返し、例外は storage" },
+    { "id": "NFR8.3", "status": "OK", "target": "security-design.md 第5.1節: 架空のテストデータ（unit-test-instructions で具体化）" },
+    { "id": "NFR9.1", "status": "OK", "target": "security-design.md 第5.1節: 追加の依存なし" }
+  ]
+}

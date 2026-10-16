@@ -1,0 +1,12 @@
+{
+  "stage": "infrastructure-design",
+  "unit": "monthly-summary",
+  "upstream_ids": ["NFR1.1", "NFR3.1", "NFR3.2", "NFR6.1", "NFR9.1"],
+  "coverage": [
+    { "id": "NFR1.1", "status": "OK", "target": "cicd-pipeline.md 第1章と第2章 3: monthly-summary 用の禁止規則の追加と Lint での確認" },
+    { "id": "NFR3.1", "status": "OK", "target": "cicd-pipeline.md 第3章: 性能の目安をテストの通過条件に含め、本物のブラウザでの合計を U7 に回す" },
+    { "id": "NFR3.2", "status": "OK", "target": "cicd-pipeline.md 第3章: 性能の目安をテストの通過条件に含める" },
+    { "id": "NFR6.1", "status": "OK", "target": "cicd-pipeline.md 第1〜3章: monthly-summary 用プロジェクトと下限、npm run verify をマージ前の条件とする" },
+    { "id": "NFR9.1", "status": "OK", "target": "cicd-pipeline.md 第2章 1: npm ci と engine-strict による再現可能な取得（追加の依存なし）" }
+  ]
+}

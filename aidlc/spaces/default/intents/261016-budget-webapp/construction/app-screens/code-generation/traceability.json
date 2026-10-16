@@ -1,0 +1,585 @@
+{
+  "stage": "code-generation",
+  "unit": "app-screens",
+  "upstream_ids": [
+    "AC1.1.1",
+    "AC1.1.2",
+    "AC1.1.3",
+    "AC1.1.4",
+    "AC1.1.5",
+    "AC1.2.1",
+    "AC1.2.2",
+    "AC1.2.3",
+    "AC1.3.1",
+    "AC1.3.2",
+    "AC2.1.1",
+    "AC2.1.2",
+    "AC2.1.3",
+    "AC2.1.4",
+    "AC2.2.1",
+    "AC2.2.2",
+    "AC2.2.3",
+    "AC2.3.1",
+    "AC2.3.2",
+    "AC2.3.3",
+    "AC2.3.4",
+    "AC2.4.1",
+    "AC2.4.2",
+    "AC2.4.3",
+    "AC2.5.1",
+    "AC2.5.2",
+    "AC2.5.3",
+    "AC3.1.1",
+    "AC3.1.2",
+    "AC3.2.1",
+    "AC3.2.2",
+    "AC3.2.3",
+    "AC3.3.1",
+    "AC3.3.2",
+    "AC3.4.1",
+    "AC3.4.2",
+    "AC3.4.3",
+    "AC3.4.4",
+    "AC4.1.1",
+    "AC4.1.2",
+    "AC4.1.3",
+    "AC4.2.1",
+    "AC4.2.2",
+    "AC4.2.3",
+    "AC4.2.4",
+    "AC4.3.1",
+    "AC4.3.2",
+    "AC5.1.1",
+    "AC5.1.2",
+    "AC5.1.3",
+    "AC5.1.4",
+    "AC5.2.1",
+    "AC5.2.2",
+    "AC5.2.3",
+    "AC5.3.1",
+    "AC5.4.1",
+    "AC5.4.2",
+    "AC6.1.1",
+    "AC6.1.2",
+    "AC6.1.3",
+    "AC6.1.4",
+    "AC6.2.1",
+    "AC6.2.2",
+    "AC6.2.3",
+    "AC6.3.1",
+    "AC7.1.1",
+    "AC7.1.2",
+    "AC7.1.3",
+    "AC7.1.4",
+    "AC7.2.1",
+    "AC7.2.2",
+    "AC7.2.3",
+    "AC7.2.4",
+    "AC7.3.1",
+    "AC7.3.2",
+    "AC7.3.3",
+    "AC7.4.1",
+    "AC7.4.2",
+    "AC8.1.1",
+    "AC8.1.2",
+    "AC8.2.1",
+    "AC8.2.2",
+    "AC8.3.1",
+    "AC8.3.2",
+    "AC8.3.3",
+    "AC8.4.1",
+    "AC9.1.1",
+    "AC9.1.2",
+    "AC9.1.3",
+    "AC9.1.4",
+    "AC9.2.1",
+    "AC9.2.2",
+    "AC9.2.3",
+    "AC9.3.1",
+    "AC9.3.2"
+  ],
+  "coverage": [
+    {
+      "id": "AC1.1.1",
+      "status": "OK",
+      "target": "src/app/App.test.tsx, src/app/reads.test.ts"
+    },
+    {
+      "id": "AC1.1.2",
+      "status": "OK",
+      "target": "src/app/App.test.tsx, src/app/reads.test.ts"
+    },
+    {
+      "id": "AC1.1.3",
+      "status": "OK",
+      "target": "src/app/App.test.tsx, src/app/reads.test.ts"
+    },
+    {
+      "id": "AC1.1.4",
+      "status": "OK",
+      "target": "src/app/App.test.tsx, src/app/reads.test.ts"
+    },
+    {
+      "id": "AC1.1.5",
+      "status": "OK",
+      "target": "src/app/App.test.tsx, src/app/reads.test.ts"
+    },
+    {
+      "id": "AC1.2.1",
+      "status": "OK",
+      "target": "src/app/App.test.tsx, src/app/reads.test.ts"
+    },
+    {
+      "id": "AC1.2.2",
+      "status": "OK",
+      "target": "src/app/App.test.tsx, src/app/reads.test.ts"
+    },
+    {
+      "id": "AC1.2.3",
+      "status": "OK",
+      "target": "src/app/App.test.tsx, src/app/reads.test.ts"
+    },
+    {
+      "id": "AC1.3.1",
+      "status": "OK",
+      "target": "src/app/App.test.tsx, src/app/reads.test.ts"
+    },
+    {
+      "id": "AC1.3.2",
+      "status": "OK",
+      "target": "src/app/App.test.tsx, src/app/reads.test.ts"
+    },
+    {
+      "id": "AC2.1.1",
+      "status": "OK",
+      "target": "src/app/screens/TransactionsScreen.test.tsx, src/app/screens/TransactionForm.test.tsx, src/app/screens/TransactionList.test.tsx"
+    },
+    {
+      "id": "AC2.1.2",
+      "status": "OK",
+      "target": "src/app/screens/TransactionsScreen.test.tsx, src/app/screens/TransactionForm.test.tsx, src/app/screens/TransactionList.test.tsx"
+    },
+    {
+      "id": "AC2.1.3",
+      "status": "OK",
+      "target": "src/app/screens/TransactionsScreen.test.tsx, src/app/screens/TransactionForm.test.tsx, src/app/screens/TransactionList.test.tsx"
+    },
+    {
+      "id": "AC2.1.4",
+      "status": "OK",
+      "target": "src/app/screens/TransactionsScreen.test.tsx, src/app/screens/TransactionForm.test.tsx, src/app/screens/TransactionList.test.tsx"
+    },
+    {
+      "id": "AC2.2.1",
+      "status": "OK",
+      "target": "src/app/screens/TransactionsScreen.test.tsx, src/app/screens/TransactionForm.test.tsx, src/app/screens/TransactionList.test.tsx"
+    },
+    {
+      "id": "AC2.2.2",
+      "status": "OK",
+      "target": "src/app/screens/TransactionsScreen.test.tsx, src/app/screens/TransactionForm.test.tsx, src/app/screens/TransactionList.test.tsx"
+    },
+    {
+      "id": "AC2.2.3",
+      "status": "OK",
+      "target": "src/app/screens/TransactionsScreen.test.tsx, src/app/screens/TransactionForm.test.tsx, src/app/screens/TransactionList.test.tsx"
+    },
+    {
+      "id": "AC2.3.1",
+      "status": "OK",
+      "target": "src/app/screens/TransactionsScreen.test.tsx, src/app/screens/TransactionForm.test.tsx, src/app/screens/TransactionList.test.tsx"
+    },
+    {
+      "id": "AC2.3.2",
+      "status": "OK",
+      "target": "src/app/screens/TransactionsScreen.test.tsx, src/app/screens/TransactionForm.test.tsx, src/app/screens/TransactionList.test.tsx"
+    },
+    {
+      "id": "AC2.3.3",
+      "status": "OK",
+      "target": "src/app/screens/TransactionsScreen.test.tsx, src/app/screens/TransactionForm.test.tsx, src/app/screens/TransactionList.test.tsx"
+    },
+    {
+      "id": "AC2.3.4",
+      "status": "OK",
+      "target": "src/app/screens/TransactionsScreen.test.tsx, src/app/screens/TransactionForm.test.tsx, src/app/screens/TransactionList.test.tsx"
+    },
+    {
+      "id": "AC2.4.1",
+      "status": "OK",
+      "target": "src/app/screens/TransactionsScreen.test.tsx, src/app/screens/TransactionForm.test.tsx, src/app/screens/TransactionList.test.tsx"
+    },
+    {
+      "id": "AC2.4.2",
+      "status": "OK",
+      "target": "src/app/screens/TransactionsScreen.test.tsx, src/app/screens/TransactionForm.test.tsx, src/app/screens/TransactionList.test.tsx"
+    },
+    {
+      "id": "AC2.4.3",
+      "status": "OK",
+      "target": "src/app/screens/TransactionsScreen.test.tsx, src/app/screens/TransactionForm.test.tsx, src/app/screens/TransactionList.test.tsx"
+    },
+    {
+      "id": "AC2.5.1",
+      "status": "OK",
+      "target": "src/app/screens/TransactionsScreen.test.tsx, src/app/screens/TransactionForm.test.tsx, src/app/screens/TransactionList.test.tsx"
+    },
+    {
+      "id": "AC2.5.2",
+      "status": "OK",
+      "target": "src/app/screens/TransactionsScreen.test.tsx, src/app/screens/TransactionForm.test.tsx, src/app/screens/TransactionList.test.tsx"
+    },
+    {
+      "id": "AC2.5.3",
+      "status": "OK",
+      "target": "src/app/screens/TransactionsScreen.test.tsx, src/app/screens/TransactionForm.test.tsx, src/app/screens/TransactionList.test.tsx"
+    },
+    {
+      "id": "AC3.1.1",
+      "status": "OK",
+      "target": "src/app/screens/CategoriesScreen.test.tsx"
+    },
+    {
+      "id": "AC3.1.2",
+      "status": "OK",
+      "target": "src/app/screens/CategoriesScreen.test.tsx"
+    },
+    {
+      "id": "AC3.2.1",
+      "status": "OK",
+      "target": "src/app/screens/CategoriesScreen.test.tsx"
+    },
+    {
+      "id": "AC3.2.2",
+      "status": "OK",
+      "target": "src/app/screens/CategoriesScreen.test.tsx"
+    },
+    {
+      "id": "AC3.2.3",
+      "status": "OK",
+      "target": "src/app/screens/CategoriesScreen.test.tsx"
+    },
+    {
+      "id": "AC3.3.1",
+      "status": "OK",
+      "target": "src/app/screens/CategoriesScreen.test.tsx"
+    },
+    {
+      "id": "AC3.3.2",
+      "status": "OK",
+      "target": "src/app/screens/CategoriesScreen.test.tsx"
+    },
+    {
+      "id": "AC3.4.1",
+      "status": "OK",
+      "target": "src/app/screens/CategoriesScreen.test.tsx"
+    },
+    {
+      "id": "AC3.4.2",
+      "status": "OK",
+      "target": "src/app/screens/CategoriesScreen.test.tsx"
+    },
+    {
+      "id": "AC3.4.3",
+      "status": "OK",
+      "target": "src/app/screens/CategoriesScreen.test.tsx"
+    },
+    {
+      "id": "AC3.4.4",
+      "status": "OK",
+      "target": "src/app/screens/CategoriesScreen.test.tsx"
+    },
+    {
+      "id": "AC4.1.1",
+      "status": "OK",
+      "target": "src/app/screens/BudgetScreen.test.tsx"
+    },
+    {
+      "id": "AC4.1.2",
+      "status": "OK",
+      "target": "src/app/screens/BudgetScreen.test.tsx"
+    },
+    {
+      "id": "AC4.1.3",
+      "status": "OK",
+      "target": "src/app/screens/BudgetScreen.test.tsx"
+    },
+    {
+      "id": "AC4.2.1",
+      "status": "OK",
+      "target": "src/app/screens/BudgetScreen.test.tsx"
+    },
+    {
+      "id": "AC4.2.2",
+      "status": "OK",
+      "target": "src/app/screens/BudgetScreen.test.tsx"
+    },
+    {
+      "id": "AC4.2.3",
+      "status": "OK",
+      "target": "src/app/screens/BudgetScreen.test.tsx"
+    },
+    {
+      "id": "AC4.2.4",
+      "status": "OK",
+      "target": "src/app/screens/BudgetScreen.test.tsx"
+    },
+    {
+      "id": "AC4.3.1",
+      "status": "OK",
+      "target": "src/app/screens/BudgetScreen.test.tsx"
+    },
+    {
+      "id": "AC4.3.2",
+      "status": "OK",
+      "target": "src/app/screens/BudgetScreen.test.tsx"
+    },
+    {
+      "id": "AC5.1.1",
+      "status": "OK",
+      "target": "src/app/screens/SummaryScreen.test.tsx"
+    },
+    {
+      "id": "AC5.1.2",
+      "status": "OK",
+      "target": "src/app/screens/SummaryScreen.test.tsx"
+    },
+    {
+      "id": "AC5.1.3",
+      "status": "OK",
+      "target": "src/app/screens/SummaryScreen.test.tsx"
+    },
+    {
+      "id": "AC5.1.4",
+      "status": "OK",
+      "target": "src/app/screens/SummaryScreen.test.tsx"
+    },
+    {
+      "id": "AC5.2.1",
+      "status": "OK",
+      "target": "src/app/screens/SummaryScreen.test.tsx"
+    },
+    {
+      "id": "AC5.2.2",
+      "status": "OK",
+      "target": "src/app/screens/SummaryScreen.test.tsx"
+    },
+    {
+      "id": "AC5.2.3",
+      "status": "OK",
+      "target": "src/app/screens/SummaryScreen.test.tsx"
+    },
+    {
+      "id": "AC5.3.1",
+      "status": "OK",
+      "target": "src/app/screens/SummaryScreen.test.tsx"
+    },
+    {
+      "id": "AC5.4.1",
+      "status": "OK",
+      "target": "src/app/screens/SummaryScreen.test.tsx"
+    },
+    {
+      "id": "AC5.4.2",
+      "status": "OK",
+      "target": "src/app/screens/SummaryScreen.test.tsx"
+    },
+    {
+      "id": "AC6.1.1",
+      "status": "OK",
+      "target": "src/app/screens/CsvExportPanel.test.tsx, src/app/screens/CsvScreen.test.tsx"
+    },
+    {
+      "id": "AC6.1.2",
+      "status": "OK",
+      "target": "src/app/screens/CsvExportPanel.test.tsx, src/app/screens/CsvScreen.test.tsx"
+    },
+    {
+      "id": "AC6.1.3",
+      "status": "OK",
+      "target": "src/app/screens/CsvExportPanel.test.tsx, src/app/screens/CsvScreen.test.tsx"
+    },
+    {
+      "id": "AC6.1.4",
+      "status": "OK",
+      "target": "src/app/screens/CsvExportPanel.test.tsx, src/app/screens/CsvScreen.test.tsx"
+    },
+    {
+      "id": "AC6.2.1",
+      "status": "OK",
+      "target": "src/app/screens/CsvExportPanel.test.tsx, src/app/screens/CsvScreen.test.tsx"
+    },
+    {
+      "id": "AC6.2.2",
+      "status": "OK",
+      "target": "src/app/screens/CsvExportPanel.test.tsx, src/app/screens/CsvScreen.test.tsx"
+    },
+    {
+      "id": "AC6.2.3",
+      "status": "OK",
+      "target": "src/app/screens/CsvExportPanel.test.tsx, src/app/screens/CsvScreen.test.tsx"
+    },
+    {
+      "id": "AC6.3.1",
+      "status": "OK",
+      "target": "src/app/screens/CsvExportPanel.test.tsx, src/app/screens/CsvScreen.test.tsx"
+    },
+    {
+      "id": "AC7.1.1",
+      "status": "OK",
+      "target": "src/app/screens/CsvImportPanel.test.tsx, src/app/screens/ImportPreviewDialog.test.tsx, src/app/screens/CsvScreen.test.tsx"
+    },
+    {
+      "id": "AC7.1.2",
+      "status": "OK",
+      "target": "src/app/screens/CsvImportPanel.test.tsx, src/app/screens/ImportPreviewDialog.test.tsx, src/app/screens/CsvScreen.test.tsx"
+    },
+    {
+      "id": "AC7.1.3",
+      "status": "OK",
+      "target": "src/app/screens/CsvImportPanel.test.tsx, src/app/screens/ImportPreviewDialog.test.tsx, src/app/screens/CsvScreen.test.tsx"
+    },
+    {
+      "id": "AC7.1.4",
+      "status": "OK",
+      "target": "src/app/screens/CsvImportPanel.test.tsx, src/app/screens/ImportPreviewDialog.test.tsx, src/app/screens/CsvScreen.test.tsx"
+    },
+    {
+      "id": "AC7.2.1",
+      "status": "OK",
+      "target": "src/app/screens/CsvImportPanel.test.tsx, src/app/screens/ImportPreviewDialog.test.tsx, src/app/screens/CsvScreen.test.tsx"
+    },
+    {
+      "id": "AC7.2.2",
+      "status": "OK",
+      "target": "src/app/screens/CsvImportPanel.test.tsx, src/app/screens/ImportPreviewDialog.test.tsx, src/app/screens/CsvScreen.test.tsx"
+    },
+    {
+      "id": "AC7.2.3",
+      "status": "OK",
+      "target": "src/app/screens/CsvImportPanel.test.tsx, src/app/screens/ImportPreviewDialog.test.tsx, src/app/screens/CsvScreen.test.tsx"
+    },
+    {
+      "id": "AC7.2.4",
+      "status": "OK",
+      "target": "src/app/screens/CsvImportPanel.test.tsx, src/app/screens/ImportPreviewDialog.test.tsx, src/app/screens/CsvScreen.test.tsx"
+    },
+    {
+      "id": "AC7.3.1",
+      "status": "OK",
+      "target": "src/app/screens/CsvImportPanel.test.tsx, src/app/screens/ImportPreviewDialog.test.tsx, src/app/screens/CsvScreen.test.tsx"
+    },
+    {
+      "id": "AC7.3.2",
+      "status": "OK",
+      "target": "src/app/screens/CsvImportPanel.test.tsx, src/app/screens/ImportPreviewDialog.test.tsx, src/app/screens/CsvScreen.test.tsx"
+    },
+    {
+      "id": "AC7.3.3",
+      "status": "OK",
+      "target": "src/app/screens/CsvImportPanel.test.tsx, src/app/screens/ImportPreviewDialog.test.tsx, src/app/screens/CsvScreen.test.tsx"
+    },
+    {
+      "id": "AC7.4.1",
+      "status": "OK",
+      "target": "src/app/screens/CsvImportPanel.test.tsx, src/app/screens/ImportPreviewDialog.test.tsx, src/app/screens/CsvScreen.test.tsx"
+    },
+    {
+      "id": "AC7.4.2",
+      "status": "OK",
+      "target": "src/app/screens/CsvImportPanel.test.tsx, src/app/screens/ImportPreviewDialog.test.tsx, src/app/screens/CsvScreen.test.tsx"
+    },
+    {
+      "id": "AC8.1.1",
+      "status": "OK",
+      "target": "src/app/App.test.tsx, src/app/screens/TransactionsScreen.test.tsx, src/app/screens/SummaryScreen.test.tsx, src/app/screens/CsvScreen.test.tsx"
+    },
+    {
+      "id": "AC8.1.2",
+      "status": "OK",
+      "target": "src/app/App.test.tsx, src/app/screens/TransactionsScreen.test.tsx, src/app/screens/SummaryScreen.test.tsx, src/app/screens/CsvScreen.test.tsx"
+    },
+    {
+      "id": "AC8.2.1",
+      "status": "OK",
+      "target": "src/app/App.test.tsx, src/app/screens/TransactionsScreen.test.tsx, src/app/screens/SummaryScreen.test.tsx, src/app/screens/CsvScreen.test.tsx"
+    },
+    {
+      "id": "AC8.2.2",
+      "status": "OK",
+      "target": "src/app/App.test.tsx, src/app/screens/TransactionsScreen.test.tsx, src/app/screens/SummaryScreen.test.tsx, src/app/screens/CsvScreen.test.tsx"
+    },
+    {
+      "id": "AC8.3.1",
+      "status": "OK",
+      "target": "src/app/App.test.tsx, src/app/screens/TransactionsScreen.test.tsx, src/app/screens/SummaryScreen.test.tsx, src/app/screens/CsvScreen.test.tsx"
+    },
+    {
+      "id": "AC8.3.2",
+      "status": "OK",
+      "target": "src/app/App.test.tsx, src/app/screens/TransactionsScreen.test.tsx, src/app/screens/SummaryScreen.test.tsx, src/app/screens/CsvScreen.test.tsx"
+    },
+    {
+      "id": "AC8.3.3",
+      "status": "OK",
+      "target": "src/app/App.test.tsx, src/app/screens/TransactionsScreen.test.tsx, src/app/screens/SummaryScreen.test.tsx, src/app/screens/CsvScreen.test.tsx"
+    },
+    {
+      "id": "AC8.4.1",
+      "status": "OK",
+      "target": "src/app/App.test.tsx, src/app/screens/TransactionsScreen.test.tsx, src/app/screens/SummaryScreen.test.tsx, src/app/screens/CsvScreen.test.tsx"
+    },
+    {
+      "id": "AC9.1.1",
+      "status": "OK",
+      "target": "src/app/TabNav.test.tsx, src/app/screens/TransactionsScreen.test.tsx, src/app/screens/CategoriesScreen.test.tsx, src/app/screens/ImportPreviewDialog.test.tsx"
+    },
+    {
+      "id": "AC9.1.2",
+      "status": "OK",
+      "target": "src/app/TabNav.test.tsx, src/app/screens/TransactionsScreen.test.tsx, src/app/screens/CategoriesScreen.test.tsx, src/app/screens/ImportPreviewDialog.test.tsx"
+    },
+    {
+      "id": "AC9.1.3",
+      "status": "OK",
+      "target": "src/app/TabNav.test.tsx, src/app/screens/TransactionsScreen.test.tsx, src/app/screens/CategoriesScreen.test.tsx, src/app/screens/ImportPreviewDialog.test.tsx"
+    },
+    {
+      "id": "AC9.1.4",
+      "status": "OK",
+      "target": "src/app/TabNav.test.tsx, src/app/screens/TransactionsScreen.test.tsx, src/app/screens/CategoriesScreen.test.tsx, src/app/screens/ImportPreviewDialog.test.tsx"
+    },
+    {
+      "id": "AC9.2.1",
+      "status": "OK",
+      "target": "src/app/TabNav.test.tsx, src/app/screens/TransactionsScreen.test.tsx, src/app/screens/CategoriesScreen.test.tsx, src/app/screens/ImportPreviewDialog.test.tsx"
+    },
+    {
+      "id": "AC9.2.2",
+      "status": "OK",
+      "target": "src/app/TabNav.test.tsx, src/app/screens/TransactionsScreen.test.tsx, src/app/screens/CategoriesScreen.test.tsx, src/app/screens/ImportPreviewDialog.test.tsx"
+    },
+    {
+      "id": "AC9.2.3",
+      "status": "OK",
+      "target": "src/app/TabNav.test.tsx, src/app/screens/TransactionsScreen.test.tsx, src/app/screens/CategoriesScreen.test.tsx, src/app/screens/ImportPreviewDialog.test.tsx"
+    },
+    {
+      "id": "AC9.3.1",
+      "status": "OK",
+      "target": "src/app/TabNav.test.tsx, src/app/screens/TransactionsScreen.test.tsx, src/app/screens/CategoriesScreen.test.tsx, src/app/screens/ImportPreviewDialog.test.tsx"
+    },
+    {
+      "id": "AC9.3.2",
+      "status": "OK",
+      "target": "src/app/TabNav.test.tsx, src/app/screens/TransactionsScreen.test.tsx, src/app/screens/CategoriesScreen.test.tsx, src/app/screens/ImportPreviewDialog.test.tsx"
+    }
+  ],
+  "reverse": [
+    {
+      "id": "BR10.1",
+      "status": "OK",
+      "target": "src/app/App.test.tsx（架空データの表示）"
+    }
+  ]
+}

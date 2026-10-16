@@ -1,0 +1,22 @@
+{
+  "stage": "functional-design",
+  "unit": "monthly-summary",
+  "upstream_ids": ["AC5.1.1", "AC5.1.2", "AC5.1.3", "AC5.1.4", "AC5.2.1", "AC5.2.2", "AC5.2.3", "AC5.3.1", "AC5.4.1", "AC5.4.2"],
+  "coverage": [
+    { "id": "AC5.1.1", "status": "OK", "target": "BR1.2" },
+    { "id": "AC5.1.2", "status": "OK", "target": "BR1.1" },
+    { "id": "AC5.1.3", "status": "OK", "target": "BR1.2" },
+    { "id": "AC5.1.4", "status": "OK", "target": "BR4.1" },
+    { "id": "AC5.2.1", "status": "OK", "target": "BR2.2, BR2.3" },
+    { "id": "AC5.2.2", "status": "OK", "target": "BR2.2, BR2.3, BR2.4" },
+    { "id": "AC5.2.3", "status": "OK", "target": "BR1.3" },
+    { "id": "AC5.3.1", "status": "OK", "target": "BR3.1" },
+    { "id": "AC5.4.1", "status": "OK", "target": "BR1.4" },
+    { "id": "AC5.4.2", "status": "OK", "target": "BR1.4, BR2.2" }
+  ],
+  "reverse": [
+    { "id": "BR2.1", "status": "N/A", "target": "支出カテゴリ全件の行。FR5.3 を支える" },
+    { "id": "BR3.2", "status": "N/A", "target": "行の並び。C3 の listCategories の並びを保つ" },
+    { "id": "BR4.2", "status": "N/A", "target": "純粋な計算と入力の食い違いの扱い（ADR-003、FR5.4）" }
+  ]
+}

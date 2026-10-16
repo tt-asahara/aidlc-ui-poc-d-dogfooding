@@ -1,0 +1,11 @@
+{
+  "stage": "infrastructure-design",
+  "unit": "bookkeeping-core",
+  "upstream_ids": ["NFR1.1", "NFR3.1", "NFR6.1", "NFR9.1"],
+  "coverage": [
+    { "id": "NFR1.1", "status": "OK", "target": "cicd-pipeline.md 第1章 3: bookkeeping-core 用の禁止規則を Lint で確かめる" },
+    { "id": "NFR3.1", "status": "OK", "target": "cicd-pipeline.md 第2章: 性能の目安をテストの通過条件に含め、本物のブラウザでの確認を U7 に回す" },
+    { "id": "NFR6.1", "status": "OK", "target": "cicd-pipeline.md 第1〜2章: npm run verify（全体と src/bookkeeping-core の行カバレッジ 80% 以上）をマージ前の条件とする" },
+    { "id": "NFR9.1", "status": "OK", "target": "cicd-pipeline.md 第1章 1: npm ci と engine-strict による再現可能な取得（追加の依存なし）" }
+  ]
+}

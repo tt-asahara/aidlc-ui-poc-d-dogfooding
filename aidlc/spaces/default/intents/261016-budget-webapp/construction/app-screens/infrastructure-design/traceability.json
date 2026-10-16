@@ -1,0 +1,13 @@
+{
+  "stage": "infrastructure-design",
+  "unit": "app-screens",
+  "upstream_ids": ["NFR1.1", "NFR3.1", "NFR3.2", "NFR6.1", "NFR7.1", "NFR9.1"],
+  "coverage": [
+    { "id": "NFR1.1", "status": "OK", "target": "infrastructure-specification.md 第3章: 外部参照を入れない設定、cicd-pipeline.md 第1章: 禁止の一覧" },
+    { "id": "NFR3.1", "status": "OK", "target": "cicd-pipeline.md 第3章: 本番ビルドでの合否（Build and Test）" },
+    { "id": "NFR3.2", "status": "OK", "target": "cicd-pipeline.md 第3章: 本番ビルドでの合否（Build and Test）" },
+    { "id": "NFR6.1", "status": "OK", "target": "cicd-pipeline.md 第1〜3章: src/app のしきい値と npm run verify" },
+    { "id": "NFR7.1", "status": "OK", "target": "infrastructure-specification.md 第2章: Chrome と他ブラウザの確認範囲" },
+    { "id": "NFR9.1", "status": "OK", "target": "infrastructure-specification.md 第1〜4章、cicd-pipeline.md 第2章 1: npm ci と engine-strict、ビルドの検査" }
+  ]
+}

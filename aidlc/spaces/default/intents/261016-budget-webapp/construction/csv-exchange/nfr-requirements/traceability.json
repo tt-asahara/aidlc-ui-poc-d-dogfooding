@@ -1,0 +1,16 @@
+{
+  "stage": "nfr-requirements",
+  "unit": "csv-exchange",
+  "upstream_ids": ["NFR1", "NFR2", "NFR3", "NFR4", "NFR5", "NFR6", "NFR7", "NFR8", "NFR9"],
+  "coverage": [
+    { "id": "NFR1", "status": "OK", "target": "NFR1.1" },
+    { "id": "NFR2", "status": "N/A", "target": "U6 は画面を持たない（ファイル選択のキーボード操作は U7）" },
+    { "id": "NFR3", "status": "OK", "target": "NFR3.1, NFR3.2" },
+    { "id": "NFR4", "status": "OK", "target": "NFR4.1, NFR4.2, NFR4.3" },
+    { "id": "NFR5", "status": "N/A", "target": "U6 は金額を計算しない（U1 の検証済みの整数をそのまま渡す）" },
+    { "id": "NFR6", "status": "OK", "target": "NFR6.1, NFR6.2, NFR6.3" },
+    { "id": "NFR7", "status": "N/A", "target": "ブラウザの差は U7 の Build and Test で扱う。U6 は組み込みの File・Blob・TextDecoder だけを使う" },
+    { "id": "NFR8", "status": "OK", "target": "NFR8.1, NFR8.2, NFR8.3, NFR8.4" },
+    { "id": "NFR9", "status": "OK", "target": "NFR9.1" }
+  ]
+}

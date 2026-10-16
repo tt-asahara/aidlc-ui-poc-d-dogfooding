@@ -1,0 +1,21 @@
+{
+  "stage": "nfr-design",
+  "unit": "bookkeeping-core",
+  "upstream_ids": ["NFR1.1", "NFR3.1", "NFR4.1", "NFR4.2", "NFR4.3", "NFR4.4", "NFR5.1", "NFR6.1", "NFR6.2", "NFR6.3", "NFR8.1", "NFR8.2", "NFR8.3", "NFR9.1"],
+  "coverage": [
+    { "id": "NFR1.1", "status": "OK", "target": "security-design.md 第7章: bookkeeping-core 向けの禁止規則" },
+    { "id": "NFR3.1", "status": "OK", "target": "security-design.md 第8.3節: NFR3 と同じ前提の件数、中央値での判定、取り込み 5,000 行" },
+    { "id": "NFR4.1", "status": "OK", "target": "security-design.md 第1章: runWrite による1回の書き込み処理" },
+    { "id": "NFR4.2", "status": "OK", "target": "security-design.md 第1章と第3章: 処理の中での読み直しと件数の数え方" },
+    { "id": "NFR4.3", "status": "OK", "target": "security-design.md 第2章: 失敗の区別の表" },
+    { "id": "NFR4.4", "status": "OK", "target": "security-design.md 第1章: work の中では TxContext の操作だけを待つ" },
+    { "id": "NFR5.1", "status": "OK", "target": "logical-components.md 第1章: budget-planner の整数だけの計算" },
+    { "id": "NFR6.1", "status": "OK", "target": "security-design.md 第8.1節: bookkeeping-core 用プロジェクトと行 80% 下限" },
+    { "id": "NFR6.2", "status": "OK", "target": "security-design.md 第8.1節: 実装の後にテストを書く順序" },
+    { "id": "NFR6.3", "status": "OK", "target": "security-design.md 第8.2節: 必須のテスト観点" },
+    { "id": "NFR8.1", "status": "OK", "target": "security-design.md 第7章: eval と new Function の禁止" },
+    { "id": "NFR8.2", "status": "OK", "target": "security-design.md 第7章: 架空のテストデータ" },
+    { "id": "NFR8.3", "status": "OK", "target": "security-design.md 第4章: U4 が作る検証エラーの固定の文言" },
+    { "id": "NFR9.1", "status": "OK", "target": "security-design.md 第8.1節: 追加の依存なし" }
+  ]
+}

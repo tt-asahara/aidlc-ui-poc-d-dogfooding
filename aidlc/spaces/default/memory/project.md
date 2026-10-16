@@ -56,11 +56,23 @@
 <!-- Format: NEVER [behavior] (affirmed [date]) -->
 <!-- Example: NEVER throw exceptions across service layer boundaries (affirmed 2026-05-17) -->
 
+- NEVER 実在の銀行口座・金融サービスと連携する機能を実装しない。 (affirmed 2026-10-16)
+
+- NEVER アプリケーションのデータを外部のサーバーやサービスへ送信しない。 (affirmed 2026-10-16)
+
+- NEVER 実在の個人・口座・取引に由来するデータをアプリケーション、テスト、リポジトリに含めない。 (affirmed 2026-10-16)
+
 ## Mandated
 
 <!-- Populated by practices-discovery affirmation gate. -->
 <!-- Format: ALWAYS [behavior] (affirmed [date]) -->
 <!-- Example: ALWAYS use Result<T,E> for fallible operations in service layer (affirmed 2026-05-17) -->
+
+- ALWAYS アプリケーション、テスト、サンプル、CSV の入出力例に使うデータは架空（合成）データのみとする。 (affirmed 2026-10-16)
+
+- ALWAYS アプリケーションは TypeScript で実装する。 (affirmed 2026-10-16)
+
+- ALWAYS 各ステージの承認・レビュー・テストを省略せずに実施し、承認が必要な箇所では人間の回答を待ってから先へ進む。 (affirmed 2026-10-16)
 
 ## Corrections
 

@@ -1,0 +1,11 @@
+{
+  "stage": "code-generation",
+  "unit": "bookkeeping-core",
+  "version": 1,
+  "writes": [
+    { "path": "src/bookkeeping-core/" },
+    { "path": "vitest.config.ts" },
+    { "path": "eslint.config.js" },
+    { "path": "README.md" }
+  ]
+}

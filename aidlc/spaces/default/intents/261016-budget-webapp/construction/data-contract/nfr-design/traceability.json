@@ -1,0 +1,18 @@
+{
+  "stage": "nfr-design",
+  "unit": "data-contract",
+  "upstream_ids": ["NFR1.1", "NFR3.1", "NFR5.1", "NFR6.1", "NFR6.2", "NFR8.1", "NFR8.2", "NFR8.3", "NFR8.4", "NFR8.5", "NFR9.1"],
+  "coverage": [
+    { "id": "NFR1.1", "status": "OK", "target": "security-design.md 第2章: 依存なし、ESLint による通信・保存・時計・乱数・組み込みモジュールの参照禁止、Node.js 上のテスト" },
+    { "id": "NFR3.1", "status": "OK", "target": "security-design.md 4.2: 1回走査の状態機械による復号と、5,000 レコードの時間測定テスト（合格 1,000ms、目標 300ms）" },
+    { "id": "NFR5.1", "status": "OK", "target": "security-design.md 第5章: 半角数字の確認後の変換と Number.isSafeInteger による判定" },
+    { "id": "NFR6.1", "status": "OK", "target": "security-design.md 第5章: Vitest の行カバレッジしきい値 80% と規則ごとの境界値テスト" },
+    { "id": "NFR6.2", "status": "OK", "target": "security-design.md 第5章: コード生成の計画で規則ごとにテスト先行の順序" },
+    { "id": "NFR8.1", "status": "OK", "target": "security-design.md 4.1・4.3: 数式対策の範囲と往復の性質テスト" },
+    { "id": "NFR8.2", "status": "OK", "target": "security-design.md 第3章: 型の確認を先に行い例外を投げない結果の型" },
+    { "id": "NFR8.3", "status": "OK", "target": "security-design.md 第3章: 固定文言の定数表と差し込みなしのテスト" },
+    { "id": "NFR8.4", "status": "OK", "target": "security-design.md 4.2: 線形時間の復号、閉じない引用の malformed、1行 1MB のテスト" },
+    { "id": "NFR8.5", "status": "OK", "target": "security-design.md 第5章: 架空と分かるテストデータの生成関数を1か所に集約" },
+    { "id": "NFR9.1", "status": "OK", "target": "security-design.md 第5章: engines・.nvmrc・engine-strict・正確なバージョン指定・package-lock.json" }
+  ]
+}

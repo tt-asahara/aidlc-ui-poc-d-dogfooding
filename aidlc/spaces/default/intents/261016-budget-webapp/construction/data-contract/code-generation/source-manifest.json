@@ -1,0 +1,19 @@
+{
+  "stage": "code-generation",
+  "unit": "data-contract",
+  "version": 1,
+  "writes": [
+    { "path": "package.json" },
+    { "path": "package-lock.json" },
+    { "path": ".nvmrc" },
+    { "path": ".npmrc" },
+    { "path": "tsconfig.json" },
+    { "path": ".prettierrc.json" },
+    { "path": ".prettierignore" },
+    { "path": "vitest.config.ts" },
+    { "path": "eslint.config.js" },
+    { "path": "README.md" },
+    { "path": ".gitignore" },
+    { "path": "src/data-contract/" }
+  ]
+}

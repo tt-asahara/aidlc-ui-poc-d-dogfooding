@@ -1,0 +1,305 @@
+/*
+ * 画面部品の見た目（design-system-mapping.md 第2章・第3章）。値は tokens.css の CSS 変数だけを使う（BR1.1）。
+ * U7 は tokens.css → ui-kit.css の順に読み込む。外部のフォント・画像・CSS は読み込まない。
+ * 画面幅の区切り（tokens.ts の breakpoints）: narrow < 768px。メディアクエリでは CSS 変数を使えないため数値で書く。
+ */
+
+/* ---- 共通: フォーカスリング（BR2.2: 2px 実線＋2px 余白。outline を消さない） ---- */
+.uk-button:focus-visible,
+.uk-input:focus-visible,
+.uk-select:focus-visible,
+.uk-radio__input:focus-visible,
+.uk-file-input__input:focus-visible,
+.uk-tab:focus-visible,
+.uk-dialog:focus-visible {
+  outline: var(--focus-ring-width) solid var(--color-focus);
+  outline-offset: var(--focus-ring-offset);
+}
+
+/* 記号は文字と併記し、読み上げから外す（aria-hidden は部品の側で付ける） */
+.uk-symbol {
+  margin-inline-end: var(--space-1);
+}
+
+/* ---- Button（BR2.1〜BR2.3） ---- */
+.uk-button {
+  min-height: var(--target-min);
+  min-width: var(--target-min);
+  padding: var(--space-2) var(--space-3);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+  background: var(--color-bg);
+  color: var(--color-text);
+  font-family: var(--font-family);
+  font-size: var(--font-size-base);
+  cursor: pointer;
+  transition: background-color var(--motion-duration) ease-out;
+}
+
+.uk-button--primary {
+  border-color: var(--color-primary);
+  background: var(--color-primary);
+  color: var(--color-bg);
+}
+
+.uk-button--danger {
+  border-color: var(--color-danger);
+  color: var(--color-danger);
+}
+
+.uk-button:disabled,
+.uk-button[aria-busy="true"] {
+  cursor: not-allowed;
+  opacity: 0.7;
+}
+
+/* ---- 入力欄（BR3.1〜BR3.3） ---- */
+.uk-field {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-1);
+  margin-block-end: var(--space-3);
+}
+
+.uk-field__label,
+.uk-radio-group__legend {
+  color: var(--color-text);
+  font-weight: bold;
+}
+
+.uk-field__required {
+  color: var(--color-danger);
+  margin-inline-start: var(--space-1);
+}
+
+.uk-field__hint {
+  margin: 0;
+  color: var(--color-text-muted);
+  font-size: var(--font-size-small);
+}
+
+.uk-input,
+.uk-select {
+  min-height: var(--target-min);
+  padding: var(--space-2);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+  background: var(--color-bg);
+  color: var(--color-text);
+  font-family: var(--font-family);
+  font-size: var(--font-size-base);
+}
+
+/* エラーの時は枠を 2px にして、色以外でも示す（BR3.2） */
+.uk-input[aria-invalid="true"],
+.uk-select[aria-invalid="true"] {
+  border-width: 2px;
+  border-color: var(--color-danger);
+}
+
+.uk-field-error {
+  margin: 0;
+  color: var(--color-text);
+}
+
+.uk-field-error .uk-symbol {
+  color: var(--color-danger);
+}
+
+.uk-radio-group {
+  margin: 0 0 var(--space-3);
+  padding: var(--space-2) var(--space-3);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+}
+
+.uk-radio {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2);
+  min-height: var(--target-min);
+  margin-inline-end: var(--space-4);
+}
+
+.uk-radio__input {
+  width: 20px;
+  height: 20px;
+  margin: 0;
+}
+
+/* ---- DataTable（BR4.1・BR4.2） ---- */
+.uk-table {
+  width: 100%;
+  border-collapse: collapse;
+  color: var(--color-text);
+}
+
+.uk-table__caption {
+  padding-block: var(--space-2);
+  font-weight: bold;
+  text-align: start;
+}
+
+.uk-table th,
+.uk-table td {
+  padding: var(--space-2);
+  border-bottom: 1px solid var(--color-border);
+  text-align: start;
+}
+
+.uk-table th {
+  background: var(--color-surface);
+}
+
+.uk-table .uk-table__cell--end {
+  text-align: end;
+  font-variant-numeric: var(--font-variant-numeric);
+}
+
+.uk-table[aria-busy="true"] {
+  opacity: 0.6;
+}
+
+/* 768px 未満: 各行を見出し付きのカードとして縦に積む（data-label に列見出しを持たせる） */
+@media (max-width: 767px) {
+  .uk-table thead {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip-path: inset(50%);
+    white-space: nowrap;
+  }
+
+  .uk-table tr {
+    display: block;
+    margin-block-end: var(--space-3);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius);
+  }
+
+  .uk-table td {
+    display: flex;
+    justify-content: space-between;
+    gap: var(--space-3);
+  }
+
+  .uk-table td::before {
+    content: attr(data-label);
+    font-weight: bold;
+  }
+}
+
+/* ---- Dialog（BR5.1〜BR5.6） ---- */
+.uk-dialog {
+  width: min(var(--dialog-width), calc(100vw - var(--space-4)));
+  padding: var(--space-4);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+  background: var(--color-bg);
+  color: var(--color-text);
+  font-family: var(--font-family);
+}
+
+.uk-dialog::backdrop {
+  background: color-mix(in srgb, var(--color-text) 50%, transparent);
+}
+
+.uk-dialog__title {
+  margin: 0 0 var(--space-3);
+  font-size: var(--font-size-h2);
+}
+
+@media (max-width: 767px) {
+  .uk-dialog {
+    width: 100vw;
+    max-width: 100vw;
+  }
+}
+
+/* ---- StatusPanel・InlineMessage（BR6.1〜BR6.4） ---- */
+.uk-status-panel {
+  padding: var(--space-3);
+  border-radius: var(--radius);
+  background: var(--color-surface);
+  color: var(--color-text);
+}
+
+.uk-status-panel--alert {
+  background: var(--color-warning-bg);
+}
+
+.uk-status-panel__text,
+.uk-status-panel__slow {
+  margin: 0 0 var(--space-2);
+}
+
+.uk-inline-message {
+  margin: var(--space-2) 0;
+  color: var(--color-text);
+}
+
+.uk-inline-message--success .uk-symbol {
+  color: var(--color-success);
+}
+
+.uk-inline-message--error .uk-symbol {
+  color: var(--color-danger);
+}
+
+/* ---- FileInput（BR7.1） ---- */
+.uk-file-input {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-1);
+}
+
+.uk-file-input__label {
+  font-weight: bold;
+}
+
+.uk-file-input__input {
+  min-height: var(--target-min);
+  font-family: var(--font-family);
+  font-size: var(--font-size-base);
+}
+
+/* ---- Tabs（BR8.1〜BR8.3） ---- */
+.uk-tabs__list {
+  display: flex;
+  gap: var(--space-1);
+  overflow-x: auto;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.uk-tab {
+  min-height: var(--target-min);
+  min-width: var(--target-min);
+  padding: var(--space-2) var(--space-3);
+  border: 0;
+  border-bottom: 3px solid transparent;
+  background: transparent;
+  color: var(--color-text);
+  font-family: var(--font-family);
+  font-size: var(--font-size-base);
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+/* 選択中は下線（3px）と太字。色だけに頼らない（BR8.3） */
+.uk-tab[aria-selected="true"] {
+  border-bottom-color: var(--color-primary);
+  font-weight: bold;
+}
+
+.uk-tabs__panel {
+  padding-block: var(--space-3);
+}
+
+/* ---- 動きを減らす設定（BR1.2） ---- */
+@media (prefers-reduced-motion: reduce) {
+  .uk-button,
+  .uk-tab {
+    transition: none;
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "stage": "code-generation",
+  "unit": "storage",
+  "version": 1,
+  "writes": [
+    { "path": "src/storage/" },
+    { "path": "package.json" },
+    { "path": "package-lock.json" },
+    { "path": "vitest.config.ts" },
+    { "path": "eslint.config.js" },
+    { "path": "README.md" }
+  ]
+}

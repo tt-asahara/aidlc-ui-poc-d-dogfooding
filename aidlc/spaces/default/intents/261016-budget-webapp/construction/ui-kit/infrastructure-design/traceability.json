@@ -1,0 +1,10 @@
+{
+  "stage": "infrastructure-design",
+  "unit": "ui-kit",
+  "upstream_ids": ["NFR6.1", "NFR9.1", "NFR7.1"],
+  "coverage": [
+    { "id": "NFR6.1", "status": "OK", "target": "cicd-pipeline.md 第1〜2章: npm run verify（行カバレッジ 80% 以上）をマージ前の条件とする" },
+    { "id": "NFR9.1", "status": "OK", "target": "cicd-pipeline.md 第1章: npm ci と engine-strict による再現可能な取得" },
+    { "id": "NFR7.1", "status": "OK", "target": "cicd-pipeline.md 第2章: 実ブラウザ確認 B1〜B5 を U7 の Build and Test で実施" }
+  ]
+}

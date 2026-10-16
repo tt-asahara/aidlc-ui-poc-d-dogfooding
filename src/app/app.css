@@ -1,0 +1,147 @@
+/* 画面の枠と画面ごとの配置（U7）。色・間隔・文字は U2 の tokens.css の変数を使う。部品の見た目は ui-kit.css に任せる。 */
+
+.app-shell {
+  position: relative;
+  max-width: 1120px;
+  margin: 0 auto;
+  padding: var(--space-3);
+  color: var(--color-text);
+  font-family: var(--font-family);
+  font-size: var(--font-size-base);
+}
+
+.app-header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: var(--space-2);
+  padding-bottom: var(--space-2);
+  border-bottom: 1px solid var(--color-border);
+}
+
+.app-header__title {
+  margin: 0;
+  font-size: var(--font-size-h1);
+  font-weight: 700;
+}
+
+.app-header__notice {
+  margin: 0;
+  color: var(--color-text-muted);
+  font-size: var(--font-size-small);
+}
+
+/* 「本文へ移動」は普段は隠し、Tab で最初に現れる（BR9.1）。 */
+.app-skip-link {
+  position: absolute;
+  left: -9999px;
+  top: var(--space-2);
+  padding: var(--space-1) var(--space-2);
+  background: var(--color-bg);
+  color: var(--color-text);
+}
+
+.app-skip-link:focus {
+  left: var(--space-2);
+  outline: var(--focus-ring-width) solid var(--color-focus);
+  outline-offset: var(--focus-ring-offset);
+  z-index: 10;
+}
+
+.app-main {
+  margin-top: var(--space-3);
+}
+
+.app-main:focus {
+  outline: none;
+}
+
+.app-hint {
+  color: var(--color-text-muted);
+  font-size: var(--font-size-small);
+}
+
+.app-screen {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+}
+
+.app-section {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+}
+
+.app-section__title {
+  margin: 0;
+  font-size: var(--font-size-h2);
+  font-weight: 700;
+}
+
+.app-month-nav {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--space-2);
+}
+
+.app-month-nav__label {
+  min-width: 8em;
+  text-align: center;
+  font-weight: 700;
+}
+
+.app-form-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  gap: var(--space-3);
+}
+
+.app-actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--space-2);
+}
+
+.app-amount {
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+}
+
+.app-muted {
+  color: var(--color-text-muted);
+}
+
+.app-dialog-body {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+}
+
+.app-dialog-actions {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  gap: var(--space-2);
+  margin-top: var(--space-3);
+}
+
+.app-dialog-scroll {
+  max-height: 50vh;
+  overflow-y: auto;
+}
+
+@media (max-width: 767px) {
+  .app-shell {
+    padding: var(--space-2);
+  }
+
+  .app-form-row {
+    flex-direction: column;
+    align-items: stretch;
+  }
+}

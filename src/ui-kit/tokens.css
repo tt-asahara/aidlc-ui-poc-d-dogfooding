@@ -1,0 +1,46 @@
+/*
+ * デザイントークン（design-system-mapping.md 第1章）。値の正本は tokens.ts。
+ * 値を変えるときは tokens.ts と同時に変える（tokens.test.ts が一致を確かめる）。
+ * 画面幅の区切り: narrow < 768px、medium 768〜1023px、wide ≥ 1024px（CSS 変数はメディアクエリで使えないため ui-kit.css に数値で書く）。
+ */
+:root {
+  --color-bg: #ffffff;
+  --color-surface: #f5f6f8;
+  --color-text: #1f2328;
+  --color-text-muted: #57606a;
+  --color-border: #8c959f;
+  --color-primary: #0b5cad;
+  --color-focus: #0b5cad;
+  --color-danger: #b3261e;
+  --color-success: #1a7f37;
+  --color-warning-bg: #fff4e5;
+
+  --font-family: system-ui, -apple-system, "Segoe UI", "Hiragino Sans", "Noto Sans JP", sans-serif;
+  --font-size-base: 1rem;
+  --font-size-small: 0.875rem;
+  --font-size-h1: 1.5rem;
+  --font-size-h2: 1.25rem;
+  --font-variant-numeric: tabular-nums;
+
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 16px;
+  --space-4: 24px;
+  --space-5: 32px;
+  --space-6: 48px;
+
+  --target-min: 44px;
+  --radius: 4px;
+  --dialog-width: 480px;
+  --dialog-width-wide: 720px;
+  --focus-ring-width: 2px;
+  --focus-ring-offset: 2px;
+
+  --motion-duration: 150ms;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  :root {
+    --motion-duration: 0ms;
+  }
+}

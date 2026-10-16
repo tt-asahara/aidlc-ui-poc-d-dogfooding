@@ -1,0 +1,18 @@
+{
+  "stage": "nfr-design",
+  "unit": "ui-kit",
+  "upstream_ids": ["NFR1.1", "NFR2.1", "NFR2.2", "NFR2.3", "NFR2.4", "NFR3.1", "NFR6.1", "NFR6.2", "NFR7.1", "NFR8.1", "NFR9.1"],
+  "coverage": [
+    { "id": "NFR1.1", "status": "OK", "target": "security-design.md 第4章: U2 用の通信・保存の参照禁止と外部 URL の検出テスト" },
+    { "id": "NFR2.1", "status": "OK", "target": "security-design.md 第5章: axe-core による部品ごとの自動検査（color-contrast は NFR2.4 と実ブラウザ確認で補う）" },
+    { "id": "NFR2.2", "status": "OK", "target": "security-design.md 第3章と第5章: 標準 dialog の設計、user-event によるキーボード操作のテスト" },
+    { "id": "NFR2.3", "status": "OK", "target": "security-design.md 第5章: 文字・記号の表示のテスト" },
+    { "id": "NFR2.4", "status": "OK", "target": "security-design.md 第5章: tokens.ts の値によるコントラスト比の計算テスト" },
+    { "id": "NFR3.1", "status": "N/A", "target": "部品単体の性能目標は置かない（tech-stack-decisions.md）。大量行の表示方針は U6・U7 で扱う" },
+    { "id": "NFR6.1", "status": "OK", "target": "security-design.md 第2章・第5章: .tsx を含むカバレッジ対象と行 80% しきい値" },
+    { "id": "NFR6.2", "status": "OK", "target": "security-design.md 第5章: 実装の後にテストを書く順序" },
+    { "id": "NFR7.1", "status": "OK", "target": "security-design.md 第3章: 標準 dialog と実ブラウザでの確認項目 B1〜B5" },
+    { "id": "NFR8.1", "status": "OK", "target": "security-design.md 第4章: dangerouslySetInnerHTML の禁止と文字表示のテスト" },
+    { "id": "NFR9.1", "status": "OK", "target": "security-design.md 第5章: 追加の依存の正確なバージョン指定とロックファイル" }
+  ]
+}

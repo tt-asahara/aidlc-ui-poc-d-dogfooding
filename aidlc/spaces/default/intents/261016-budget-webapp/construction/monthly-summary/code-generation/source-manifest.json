@@ -1,0 +1,11 @@
+{
+  "stage": "code-generation",
+  "unit": "monthly-summary",
+  "version": 1,
+  "writes": [
+    { "path": "src/monthly-summary/" },
+    { "path": "vitest.config.ts" },
+    { "path": "eslint.config.js" },
+    { "path": "README.md" }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "stage": "code-generation",
+  "unit": "ui-kit",
+  "version": 1,
+  "writes": [
+    { "path": "src/ui-kit/" },
+    { "path": "package.json" },
+    { "path": "package-lock.json" },
+    { "path": "tsconfig.json" },
+    { "path": "vitest.config.ts" },
+    { "path": "eslint.config.js" },
+    { "path": "README.md" }
+  ]
+}

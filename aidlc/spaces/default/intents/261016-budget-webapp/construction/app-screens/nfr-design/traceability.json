@@ -1,0 +1,21 @@
+{
+  "stage": "nfr-design",
+  "unit": "app-screens",
+  "upstream_ids": ["NFR1.1", "NFR2.1", "NFR2.2", "NFR3.1", "NFR3.2", "NFR4.1", "NFR5.1", "NFR6.1", "NFR6.2", "NFR6.3", "NFR7.1", "NFR8.1", "NFR8.2", "NFR9.1"],
+  "coverage": [
+    { "id": "NFR1.1", "status": "OK", "target": "security-design.md 第2章: import の規則と禁止の一覧、外部 URL の検査" },
+    { "id": "NFR2.1", "status": "OK", "target": "security-design.md 第5章: キーボードだけでの操作とダイアログのフォーカス" },
+    { "id": "NFR2.2", "status": "OK", "target": "security-design.md 第8章: axe-core の画面ごとの検査（主な状態）" },
+    { "id": "NFR3.1", "status": "OK", "target": "performance-design.md 第1章: 月次集計の描画（要求の連番、前の内容を残す）" },
+    { "id": "NFR3.2", "status": "OK", "target": "performance-design.md 第2章: プレビューは全件表示。最悪ケースの描画を Build and Test で測る" },
+    { "id": "NFR4.1", "status": "OK", "target": "security-design.md 第4章: 保存中の二重送信の防止と入力の保持" },
+    { "id": "NFR5.1", "status": "OK", "target": "security-design.md 第8章: 金額は整数のまま、表示だけ3桁区切り" },
+    { "id": "NFR6.1", "status": "OK", "target": "security-design.md 第8章: src/app/** の行 80% を app 用プロジェクトで確かめる" },
+    { "id": "NFR6.2", "status": "OK", "target": "security-design.md 第8章: 実装の後にテストを書く" },
+    { "id": "NFR6.3", "status": "OK", "target": "security-design.md 第6章: 必須のテスト観点" },
+    { "id": "NFR7.1", "status": "OK", "target": "security-design.md 第3章・第6章: Chrome の実ブラウザ確認と、他ブラウザの手動確認（ダウンロードを含む）" },
+    { "id": "NFR8.1", "status": "OK", "target": "security-design.md 第1章: 文字列としての描画と HTML 挿入の禁止" },
+    { "id": "NFR8.2", "status": "OK", "target": "security-design.md 第8章: CSV の内容は U6 の結果のまま保存" },
+    { "id": "NFR9.1", "status": "OK", "target": "logical-components.md 第1章: ビルドと検証の設定（package.json のスクリプト、tsconfig、eslint）" }
+  ]
+}
